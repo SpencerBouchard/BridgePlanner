@@ -1,0 +1,227 @@
+
+<!-- This page was done by Celine Ayoub (A00423097) and 
+     Patrick Melanson (A00420577)
+     It was edited by : Kendrick Knowles (A00413277)
+
+-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- This link is used to supply the icons used on this page (for the username and password labels) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <!-- This is the link for the css page that this HTML page uses -->
+    <link href="newGamesPage.css" rel="stylesheet" type="text/css">
+    <!-- This is the link for the Javascript page that this HTML page uses (when the create new game button is clicked, the summary that pops up) -->
+    <script src="newGamesPage.js"></script>
+</head>
+
+<!-- The main content of the HTML document that will be visible on the webpage -->
+
+<body>
+    <!-- This button take the user back to the games options page -->
+    <button class="button backBtn" onclick="window.location='gamesOptionsPage.html'">Back</button>
+
+    <!-- This header indicates to the user that they are creating a new game -->
+    <h1>Schedule a New Game</h1>
+    <!-- This is the form tag that is used so the user can create the new game. It uses createNewGame.php to makes sure the information given is valid and saved
+         This is done after the user enters the information about the game and hits the create game button. The PHP saves the information to the server and 
+         and displays it to the join games page -->
+    <form action="createNewGame.php" method="post">
+        <!-- This div shifts all the elements within it upwards on the page due to the previous header -->
+        <div class="shiftUp">
+            <!--This is the label to indicate to the user they are selecting the date they would like the game to take place on -->
+            <span class="label date">Date:</span>
+            <!-- Some break lines for spacing -->
+            <br><br>
+            <!-- This is the div used to format the information that pertains to selecting the month the game will be in -->
+            <div class="boxMonth">
+                <!--This is the label to indicate to the user they are selecting the month they would like the game to take place in -->
+                <span class="label month">Month</span>
+                <!-- This symbol is used to indicated to the user the box is a dropdown menu -->
+                <i class="fas fa-caret-down"></i>
+                <!-- This is the dropdrown menu for the month selection and its options -->
+                <select id="month" name="month">
+                    <option value="January">January</option>
+                    <option value="February">Febuary</option>
+                    <option value="March">March</option>
+                    <option value="April">April </option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July </option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+            </div>
+            <!-- Some break lines for spacing -->
+            <br><br><br>
+
+
+            <!-- This is the div used to format the information that pertains to selecting the day of the month the game will be on -->
+            <div class="boxDay">
+                <!--This is the label to indicate to the user they are selecting the day of the month they would like the game to take place on -->
+                <span class="label day">Day</span>
+                <!-- This symbol is used to indicated to the user the box is a dropdown menu -->
+                <i class="fas fa-caret-down"></i>
+                <!-- This is the dropdrown menu for the day of the month selection and its options -->
+                <select id="day" name="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+            <!-- Some break lines for spacing -->
+            <br><br><br>
+
+            <!-- This is the div used to format the information that pertains to selecting the year the game will be in -->
+            <div class="boxYear">
+                <!--This is the label to indicate to the user they are selecting the year they would like the game to take place in -->
+                <span class="label year">Year</span>
+                <!-- This symbol is used to indicated to the user the box is a dropdown menu -->
+                <i class="fas fa-caret-down"></i>
+                <!-- This is the dropdrown menu for the year selection and its options -->
+                <select id="year" name="year">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+            </div>
+            <!-- Some break lines for spacing -->
+            <br><br><br><br><br>
+
+            <!--Locations for bridge games as dropdown menu-->
+            <!--This is the label to indicate to the user they are selecting the location they would like the game to take place at -->
+            <span class="label gameLocation">Game Location:</span><br><br>
+            <!-- This is the div used to format the information that pertains to selecting the location the game will held at -->
+            <div class="boxLocation">
+                <!--This is the label to indicate to the user they are selecting the the location where they would like the game to take place -->
+                <span class="label location">Where</span>
+                <!-- This symbol is used to indicated to the user the box is a dropdown menu -->
+                <i class="fas fa-caret-down"></i>
+                <!-- This is the dropdrown menu for the game location selection and its options -->
+                <select id="location" name="location">
+                    <option value="Cabanna">Cabanna </option>
+                    <option value="Habour View Lodge">Habour View Lodge</option>
+                    <option value="Shirley Bernstein Hall">Shirley Bernstein Hall</option>
+                </select>
+            </div>
+            <!-- Some break lines for spacing -->
+            <br><br><br><br><br>
+
+            <!-- This is the div used to format the information that pertains to selecting the hour the game will be set at -->
+            <div class="boxHour">
+                <!--This is the label to indicate to the user they are selecting the time they would like the game to take place at -->
+                <span class="label time">Time:</span><br><br>
+                <!--This is the label to indicate to the user they are selecting the hour of day they would like the game to take place at -->
+                <span class="label hour">Hour</span>
+                <!-- This symbol is used to indicated to the user the box is a dropdown menu -->
+                <i class="fas fa-caret-down"></i>
+                <!-- This is the dropdrown menu for the hour of the day the game will take place at selection and its options -->
+                <select id="hour" name="hour">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <!-- Some break lines for spacing -->
+            <br><br><br><br>
+
+            <!-- This is the div used to format the information that pertains to selecting the minutes in the hour the game will be set at -->
+            <div class="boxMinute">
+                <!-- This is the label to indicate to the user they are selecting the time of the hour they would like the game to take place at -->
+                <span class="label minute">Minute</span>
+                <!-- This symbol is used to indicated to the user the box is a dropdown menu -->
+                <i class="fas fa-caret-down"></i>
+                <!-- This is the dropdrown menu for the minute of the hour the game will take place at selection and its options -->
+                <select id="minute" name="minute">
+                    <option value="00">00</option>
+                    <option value="15">15</option>
+                    <option value="30">30</option>
+                    <option value="45">45</option>
+                </select>
+            </div>
+            <!-- Some break lines for spacing -->
+            <br><br><br>
+
+            <!-- This is the div used to format the information that pertains to selecting the time of day the game will be held at -->
+            <div class="boxNoon">
+                <!-- This is the label to indicate to the user they are selecting the time of day they would like the game to take place at -->
+                <span class="label noon">AM or PM</span>
+                <!-- This symbol is used to indicated to the user the box is a dropdown menu -->
+                <i class="fas fa-caret-down"></i>
+                <!-- This is the dropdrown menu for the time of day the game will take place at selection and its options -->
+                <select id="noon" name="noon">   
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <!-- Some break lines for spacing -->
+            <br>
+
+            <!-- This is the div used to format the information that pertains to selecting if the user can bring a deck of cards -->
+            <div class="bringCards">
+                <!-- Some break lines for spacing -->
+                <br><br><br><br><br>
+                <!-- This is the label to indicate to the user they are selecting if they can bring a deck of cards or not -->
+                <span class="label cards">I Can Bring a Deck of Cards</span>
+            </div>
+            <!-- This is the checkbox for the user to indicate if they can bring a deck of cards or not. If they can, they click it and the box turns red. If they
+            cannot bring cards, they do not click it -->
+            <input type="checkbox" name="bringingCards" id="cardStatus">
+            <!-- Some break lines for spacing -->
+            <br><br><br><br>
+            <!--This if the create game button. It confirms to the user what they've selected, and validates it using the check if good onclick. The 
+            user is then redirected to the current games page-->
+            <button class="button createGameBtn" id="createGameBtn" onclick="checkIfGood()" value="submit"> Create New Game</button>
+            <!-- Some break lines for spacing -->
+            <br> <br>
+        </div>
+    </form>
+
+</body>
+
+</html>

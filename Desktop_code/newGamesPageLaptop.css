@@ -1,0 +1,275 @@
+/* This page was done by Celine Ayoub (A00423097)*/
+
+
+/******************************** This is the css for newGamesPageLaptop.html for the laptop version of the web app *****************************/
+
+
+/*This formats the main header of the page "Schedule a New Game" */
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+/*Format settings for the "back" button, found on the top left side of the page*/
+
+button.backBtn {
+    width: 150px;
+    height: 100px;
+    border-radius: 12px;
+    font-size: 40px;
+    border: 0px;
+    background-color: lightskyblue;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+/*Format settings for the "create game" button, found at the bottom of the page*/
+
+button.createGameBtn {
+    width: 500px;
+    height: 100px;
+    border-radius: 12px;
+    font-size: 40px;
+    border: 0px;
+    background: burlywood;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+/*format the date selections*/
+
+
+/*Date label settings*/
+
+.date {
+    font-size: 40px;
+    margin-right: 40px;
+}
+
+
+/*month, day, and year label settings*/
+
+.month,
+.day,
+.year {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* making the dropdown menus customized for the date*/
+
+
+/*Month dropdown settings*/
+
+.boxMonth {
+    display: inline-block;
+}
+
+
+/*More month dropdown settings*/
+
+.boxMonth select {
+    background: orange;
+    color: black;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    margin-right: 20px;
+}
+
+
+/*Day of the month dropdown settings*/
+
+
+/*Where the dropdown should go relative to the page*/
+
+.boxDay {
+    display: inline-block;
+}
+
+
+/*Day of the month dropdown settings*/
+
+.boxDay select {
+    background: rgb(53, 177, 53);
+    color: black;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    margin-right: 20px;
+}
+
+
+/*Year dropdown settings*/
+
+.boxYear {
+    display: inline-block;
+}
+
+
+/*More year dropdown settings*/
+
+.boxYear select {
+    background: rgb(0, 139, 219);
+    color: black;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+}
+
+
+/*format the Location selection*/
+
+
+/*Location label settings*/
+
+.location {
+    margin-top: 30px;
+    font-size: 40px;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+
+/*Location dropdown settings*/
+
+.boxLocation {
+    display: inline;
+}
+
+
+/*More location dropdown settings*/
+
+.boxLocation select {
+    background: turquoise;
+    color: black;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+}
+
+
+/*format the time selection*/
+
+
+/*Time label settings*/
+
+.time {
+    margin-top: 30px;
+    font-size: 40px;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+
+/*Hour dropdown settings*/
+
+.boxHour {
+    display: inline;
+}
+
+
+/*More Hour dropdown settings*/
+
+.boxHour select {
+    background: plum;
+    color: black;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    margin-right: 20px;
+}
+
+
+/*Minute dropdown settings*/
+
+.boxMinute {
+    display: inline;
+}
+
+
+/*More Minute dropdown settings*/
+
+.boxMinute select {
+    background: pink;
+    color: black;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    margin-right: 20px;
+}
+
+
+/*Time of day dropdown settings*/
+
+.boxNoon {
+    display: inline;
+}
+
+
+/*More Time of day dropdown settings*/
+
+.boxNoon select {
+    background: yellow;
+    color: black;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    margin-right: 20px;
+}
+
+
+/*Bringing cards label settings*/
+
+.bringCards {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+/*The checkbox settings*/
+
+input[type='checkbox'] {
+    left: 20px;
+    -webkit-appearance: none;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #555;
+}
+
+
+/*After the box is checked settings*/
+
+input[type='checkbox']:checked {
+    background: red;
+}

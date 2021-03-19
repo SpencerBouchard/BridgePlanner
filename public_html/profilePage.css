@@ -1,0 +1,69 @@
+/*This page was done by Celine Ayoub (A00423097)*/
+
+
+/******************************** This is the css for profile.php for the mobile version of the web app *****************************/
+
+
+/*The body is fomatted so that it takes up all of the browser window size for any given user */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: mintcream;
+}
+
+
+/*Format settings for the home button*/
+
+#homeBtn {
+    width: 100%;
+    height: 270px;
+    font-size: 200px;
+    border: none;
+    border-radius: 12px;
+    padding: 0px;
+    margin-top: 5%;
+    background-color: rgb(245, 177, 245);
+}
+
+
+/* Format settings for the logout button*/
+
+#logoutBtn {
+    width: 100%;
+    height: 270px;
+    font-size: 200px;
+    border: none;
+    padding: 0px;
+    margin-top: 80px;
+    background-color: rgb(174, 243, 174);
+}
+
+
+/*Format settings for the profile page header*/
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/*Format settings for the explaination on the page*/
+
+p {
+    font-size: 70px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+
+/*Format settings for the display of the username and email*/
+
+.username,
+.email {
+    margin-left: 20px;
+    font-size: 80px;
+    word-wrap: break-word;
+}

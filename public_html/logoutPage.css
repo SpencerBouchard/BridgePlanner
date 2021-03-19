@@ -1,0 +1,43 @@
+/*
+ This page was done by Celine Ayoub (A00423097).
+ */
+
+
+/******************************** This is the css for logoutPage.php for the mobile version of the web app *****************************/
+
+
+/*The body is left to its original css settings, the only change made is the color*/
+
+body {
+    background-color: cornflowerblue;
+}
+
+
+/*The format settings of the of the header notifying the user they have been logged out of the app*/
+
+h1 {
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 110px;
+    color: black;
+    font-family: serif;
+    background-color: lavender;
+}
+
+
+/*The format and settings for the button that will take the user back to the login page*/
+
+.login {
+    width: 900px;
+    height: 500px;
+    margin-left: 40px;
+    font-size: 150px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(142, 209, 17);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+}

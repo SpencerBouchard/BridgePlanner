@@ -1,0 +1,49 @@
+<!--
+    This page was done by: Aida Sultan (A00432414) and Celine Ayoub (A00423097).
+-->
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+
+<!-- metadata (data about data) information for this page -->
+
+<head>
+    <!-- This specifies the character encoding for the HTML document -->
+    <meta charset="utf-8">
+    <!-- This is the title of the page that shows up in the tab -->
+    <title>Login</title>
+    <!-- This link is used to supply the icons used on this page (for the username and password labels) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <!-- This is the link for the css page that this HTML page uses -->
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- The main content of the HTML document that will be visible on the webpage -->
+
+<body>
+    <!-- This div has the elements used for the user input (where the user enters data) and additional page redirection elements -->
+    <div class="login">
+        <!-- This is the header of the login div -->
+        <h1>Login</h1>
+        <!-- This is the form tag that is used so the user can login to the app. It uses authenticate.php to makes sure the username and passoword entered are 
+            accurate and if they even exist. This is done after the user enters their account information or if they try to hit submit with empty textbox fields -->
+        <form action="authenticate.php" method="post">
+            <!-- The username label -->
+            <label for="username"><i class="fas fa-user fa-3x"></i></label>
+            <!-- The username textbox where the user types their username -->
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <!-- The password label -->
+            <label for="password"><i class="fas fa-lock fa-3x"></i></label>
+            <!-- The password textbox where the user types their password -->
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <!-- This is the sign in button, which prompts authenticate.php. If the user's information is correct, it takes them to menuPage.html.
+                 If there is issue with the entered information, it will give the user an error notification related to the issue -->
+            <input type="submit" value="Login">
+            <!-- The label for the new user button. The user clicks the button if they need to make an account. It takes them to the registrationPage.html -->
+            <span class="label newHere">New here?</span><button class="button signupBtn" onclick="window.location='registrationPage.html'"> Sign up now!</button>
+        </form>
+    </div>
+</body>
+
+</html>

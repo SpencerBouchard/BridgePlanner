@@ -1,0 +1,137 @@
+/*This page was done by Celine Ayoub (A00423097) and Spencer Bouchard*/
+
+
+/******************************** This is the css for feed.php for the mobile version of the web app *****************************/
+
+
+/*This ensures the horizontal overflow is hidden*/
+
+html {
+    overflow-x: hidden;
+}
+
+
+/*The body is fomatted so that it takes up all of the browser window size for any given user and that it hides the overflow of the page*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0 0 0;
+    overflow-x: hidden;
+}
+
+
+/*This formats the where the "Home" link in the top bar of the page "Bridge Chat" should go*/
+
+a {
+    display: inline;
+    padding: 90px;
+}
+
+
+/*This formats the main header of the page "Bridge Chat". It is found in top bar of the page*/
+
+.navtop {
+    background-color: cornflowerblue;
+    height: 60px;
+    width: 100%;
+    border: 0;
+}
+
+
+/*This formats the div withtin the navtop. It is found at the top of the page*/
+
+.navtop div {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+
+
+/*These are the format and display settings for the "Bridge Chat" header, found on top of the page*/
+
+.navtop div h1 {
+    display: inline-flex;
+    align-items: center;
+    flex: 1;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+}
+
+
+/*Format settings for the "Home" button, found on top of the message textbox* */
+
+.navtop div a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 13px;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/*Display settings for the "Home" button, found on the top of the page*/
+
+.navtop div a i {
+    padding: 2px 8px 0 0;
+}
+
+
+/*Format settings for the "Home" button, when someone hovers or clicks on it*/
+
+.navtop div a:hover {
+    color: #eaebed;
+}
+
+
+/*Format settings for the "Send" button, found on the top of the page*/
+
+.chat-window input[type="submit"] {
+    width: 93%;
+    height: 70px;
+    font-size: 35px;
+    background-color: rgb(142, 209, 17);
+    font-weight: bold;
+    border: none;
+    -webkit-appearance: none;
+    margin-left: 2%;
+    border-radius: 10px
+}
+
+
+/*Format settings for the textbox used to compose a message*/
+
+.chat-window textarea {
+    font-size: 36px;
+    border-radius: 10px;
+    width: 93%;
+    height: 185px;
+    margin-left: 0.75%;
+    border-width: 3px;
+}
+
+
+/*This is the div and the format/settings for the messages that show up in the feed*/
+
+.chat {
+    font-size: 30px;
+    margin-left: 13px;
+    margin-right: 20px;
+    display: block;
+    word-wrap: break-word;
+}
+
+
+/*This is an addtional format setting for the head of the message sent that indicates who sent the message, on what day, at what time*/
+
+.chatHeader {
+    text-decoration: underline;
+}

@@ -1,0 +1,96 @@
+/* Author: Spencer Bouchard (A00404180) */
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 300%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 30px;
+  overflow: scroll;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set style for the send button */
+#sendButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  text-align: center;
+  position:absolute;
+  transition: .5s ease;
+  top: 48%;
+  left: 62%;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Add shadow effect to buttons on hover */
+.form-container .btn:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.form-container #FeedBackButton:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* The back to main menu button style */
+.form-container #FeedBackButton{
+  background-color: #6495ED;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* This is the list that holds all the messages style */
+#myList{
+    height: 200px;
+    width: 700px;
+    overflow: hidden;
+    overflow-y: scroll;
+    list-style-type: none;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Defines how the list elements will be displayed*/
+li{
+    background: #cce5ff;
+    margin: 7px; 
+    border-radius: 10px;
+    padding: 10px;
+    display:inline-block;
+}
+
+
+
+
+
+

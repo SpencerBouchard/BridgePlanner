@@ -1,0 +1,52 @@
+<!--
+    This page was done by: Aida Sultan (A00432414) and Celine Ayoub (A00423097).
+-->
+
+<!-- registrationPage.html -->
+<!DOCTYPE html>
+<html>
+
+<!-- metadata (data about data) information for this page -->
+
+<head>
+    <!-- This specifies the character encoding for the HTML document -->
+    <meta charset="utf-8">
+    <!-- This is the title of the page that shows up in the tab -->
+    <title>Register</title>
+    <!-- This link is used to supply the icons used on this page -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <!-- This is the link for the css page that this HTML page uses -->
+    <link href="registrationPage.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- The main content of the HTML document that will be visible on the webpage -->
+
+<body>
+    <!-- This div has the elements used for the user input (where the user enters data). It signs the user up for the app -->
+    <div class="register">
+        <!-- This is the header of the register div -->
+        <h1>Register</h1>
+        <!-- This page is what saves the newly created account -->
+        <!-- This is the form tag that is used so the user can register for the app. It uses register.php to makes sure the username entered does not already exist.
+            This is done after the user enters their account information or if they try to hit register with empty textbox fields -->
+        <form action="register.php" method="post" autocomplete="off">
+            <!-- The username label -->
+            <label for="username"><i class="fas fa-user fa-3x"></i></label>
+            <!-- The username textbox where the user types their username -->
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <!-- The password label -->
+            <label for="password"><i class="fas fa-lock fa-3x"></i></label>
+            <!-- The password textbox where the user types their password -->
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <!-- The email label -->
+            <label for="email"><i class="fas fa-envelope fa-3x"></i></label>
+            <!-- The email textbox where the user types their email -->
+            <input type="email" name="email" placeholder="Email" id="email" required>
+            <!-- This is the register button, which prompts register.php. If the user's information is valid, it takes them to index.html to sign in.
+                 If there is issue with the entered information, it will give the user an error notification related to the issue -->
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+
+</html>

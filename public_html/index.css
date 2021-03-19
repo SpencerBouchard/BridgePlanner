@@ -1,0 +1,147 @@
+/*
+ This page was done by Aida Sultan (A00432414) and Celine Ayoub (A00423097).
+ */
+
+
+/******************************** This is the css for index.html for the mobile version of the web app *****************************/
+
+
+/*This sets some format features to all the elements in the page.*/
+
+
+/*The most important setting in this div this page is the box-sizing, which defines how the width and height of an element are calculated. 
+In our case we want it to be border-box, which means the width and height properties includes the content, padding and border.*/
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 26px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*The body is left to its original css settings, the only change made is the color*/
+
+body {
+    background-color: cornflowerblue;
+}
+
+
+/*************************** Page login div css **********************************/
+
+
+/*This is the div that will contain the login elements. These are its features/settings. It is just a blank, white rectangle on its own*/
+
+.login {
+    width: 900px;
+    height: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 10px auto;
+}
+
+
+/*************************** These are the elements that are not in the form tag  **********************************/
+
+
+/*These are the features of the login div/box header*/
+
+.login h1 {
+    text-align: center;
+    color: black;
+    font-size: 90px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+
+
+/*Settings for the label for the registration button -> "New here?" */
+
+.newHere {
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+
+/*Settings for the button that takes the user to the registration page -> "Sign up now!"*/
+
+.login button.signupBtn {
+    font-size: 75px;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    margin-top: 25px;
+    margin-left: 30px;
+    color: black;
+    -webkit-appearance: none;
+}
+
+
+/*************************** These are the elements that are in the form tag  **********************************/
+
+
+/*Settings for the form tag and formatting for the elements within the form tag in the HTML page*/
+
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    width: 800px;
+    margin-left: 50px;
+}
+
+
+/*Settings for the labels of the textboxes*/
+
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 200px;
+    background-color: rgb(142, 209, 17);
+    color: #ffffff;
+}
+
+
+/*Settings for the username and password textboxes in the form*/
+
+.login form input[type="password"],
+.login form input[type="text"] {
+    width: 690px;
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    margin-right: 10px;
+    font-size: 80px;
+}
+
+
+/*Settings for the submit/login button*/
+
+.login form input[type="submit"] {
+    width: 800px;
+    height: 200px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: rgb(142, 209, 17);
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 100px;
+    transition: background-color 0.2s;
+    -webkit-appearance: none;
+}
+
+
+/*Settings for the submit/login button when a user clicks or hovers over it*/
+
+.login form input[type="submit"]:hover {
+    background-color: cornflowerblue;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+}

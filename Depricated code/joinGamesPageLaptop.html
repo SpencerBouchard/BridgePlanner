@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <!This is the title of the page that shows up in the tab>
+    <title>Games Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <!This is the css link for this HTML page>
+    <link href="joinGamesPageLaptop.css" rel="stylesheet" type="text/css">
+</head>
+
+
+
+<!This is the back button that takes the user back to the previous page>
+<button id="backBtn" onclick="goBack()">Back</button>
+
+<!This is the title of the page that shows up on the page>
+<h1>Here are the available games</h1>
+
+<body>
+    <button id="upBtn" onclick="scrollWin(0, -75)"><i class="fas fa-arrow-up"></i><br>Up</button><br>
+    <button id="downBtn" onclick="scrollWin(0, 75)">Down<br><i class="fas fa-arrow-down"></i></button>
+    <!--
+        <img src="upArrow.png" width="80" height="100" id="upButton" onclick="scrollWin(0, -75)" align="right"></img>
+        <img src="downArrow.png" width="80" height="100" id="downButton" onclick="scrollWin(0, 75)" align="right"></img>-->
+
+    <div class="aGame">
+        <button id="deleteGameBtn" onclick="var result = confirm('Want to delete?')">Delete Game</button>
+
+        <span class="label gameNum"><center>Game</center></span><br>
+        <span class="label gameLocation">Location: </span><br>
+        <span class="label gameDate">Date: </span><br>
+        <span class="label gameTime">Time: </span><br>
+        <span class="label gameCards">Person(s) Bringing Cards: </span><br><br><br>
+
+        <script>
+            function scrollWin(x, y) {
+                window.scrollBy(x, y);
+            }
+        </script>
+
+
+
+        <table>
+
+            <button class="button joinGameBtn">Join Game</button><br>
+            <button class="button addYvonneBtn">Add Yvonne</button>
+
+            <tr>
+                <th>Players Currently in Game</th>
+            </tr>
+            <!--First player-->
+            <tr>
+                <td>Celine</td>
+            </tr>
+            <!--Second player-->
+            <tr>
+                <td>Celine</td>
+            </tr>
+            <!--Thrid player-->
+            <tr>
+                <td>Celine</td>
+            </tr>
+            <!--Fourth player-->
+            <tr>
+                <td>Celine</td>
+            </tr>
+            <!--Fifth player-->
+            <tr>
+                <td>Celine</td>
+            </tr>
+            <!--Sixth player-->
+            <tr>
+                <td>Celine</td>
+            </tr>
+            <!--Seventh player-->
+            <tr>
+                <td>Celine</td>
+            </tr>
+            <!--Eighth player-->
+            <tr>
+                <td>Celine</td>
+            </tr>
+        </table> <br><br><br>
+
+    </div>
+</body>
+
+</html>

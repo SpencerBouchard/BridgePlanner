@@ -1,0 +1,109 @@
+/*This page was done by Celine Ayoub (A00423097)*/
+
+
+/******************************** This is the css for gamesOptionPageLaptop.html for the laptop version of the web app *****************************/
+
+
+/*The body is fomatted so that it takes up all of the browser window size for any given user */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0 0 0;
+}
+
+
+/*The page is fomatted using the spilt div to split the page in half horizontaly. The div is applied to both the top and bottom half divs.*/
+
+.split {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 0;
+}
+
+
+/*Settings of the top half of the page. It indicates that the top half of the page starts at the very top edge of the page and what color it should be */
+
+.top {
+    top: 0;
+    background-color: rgb(255, 255, 180);
+}
+
+
+/*Settings of the bottom half of the page. It indicates that the bottom half of the page should end at the very bottom edge of the page and what color it 
+should be */
+
+.bottom {
+    bottom: 0;
+    background-color: rgb(195, 195, 255);
+}
+
+
+/*************************** Page buttons css **********************************/
+
+
+/*This div positions the back button in the top left corner of the page*/
+
+.topLeftButton {
+    position: absolute;
+    margin: 10px;
+    font-size: 18px;
+}
+
+
+/*Settings for the "Back" button on the top left side of the page*/
+
+.backBtn {
+    width: 200px;
+    height: 100px;
+    border-radius: 12px;
+    font-size: 50px;
+    border: 0px;
+    background-color: orange;
+    float: left;
+}
+
+
+/*This div centers the top and bottom buttons with respect to the div the buttons are nested in (top div or bottom div)*/
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/*General button settings that apply to the top button and bottom button on the page */
+
+button {
+    width: 600px;
+    height: 300px;
+    border: 0px;
+    font-size: 100px;
+    border-radius: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*Settings to get the back button on the top left side of the page*/
+
+
+/*Settings for the button on the top half of the page -> "Create New Game"*/
+
+.topBtn {
+    background-color: rgb(200, 255, 255);
+}
+
+
+/*Settings for the button on the bottom half of the page -> "Join Current Game" */
+
+.bottomBtn {
+    background-color: rgb(151, 255, 151);
+}

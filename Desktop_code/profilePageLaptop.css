@@ -1,0 +1,73 @@
+/*This page was done by Celine Ayoub (A00423097)*/
+
+
+/******************************** This is the css for profilePageLaptop.php for the laptop version of the web app *****************************/
+
+
+/*The body is fomatted so that it takes up all of the browser window size for any given user */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: lavenderblush;
+}
+
+
+/*Format settings for the home button*/
+
+#homeBtn {
+    width: 400px;
+    height: 150px;
+    font-size: 60px;
+    border: none;
+    border-radius: 12px;
+    padding: 0px;
+    margin-top: 2%;
+    margin-left: 300px;
+    margin-right: 100px;
+    background-color: rgb(245, 177, 245);
+}
+
+
+/* Format settings for the logout button*/
+
+#logoutBtn {
+    width: 400px;
+    height: 150px;
+    font-size: 60px;
+    border: none;
+    border-radius: 12px;
+    padding: 0px;
+    margin-top: 2%;
+    background-color: palevioletred;
+}
+
+
+/*Format settings for the profile page header*/
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: underline;
+}
+
+
+/*Format settings for the explaination on the page*/
+
+p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+
+/*Format settings for the display of the username and email*/
+
+.username,
+.email {
+    margin-left: 300px;
+    font-size: 40px;
+    word-wrap: break-word;
+}

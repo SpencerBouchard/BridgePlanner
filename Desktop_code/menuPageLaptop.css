@@ -1,0 +1,139 @@
+/* This page was done by Celine Ayoub (A00423097)*/
+
+
+/******************************** This is the css for menuPageLaptop.php for the laptop version of the web app *****************************/
+
+
+/*The body format is left to its original settings. The only thing changed is the background color*/
+
+body {
+    background-color: rgb(243, 186, 243);
+}
+
+
+/*This is the div of the top bar. These are the settings for how the top bar of the page should look like and how the elements that are in 
+the top bar should be displayed */
+
+.top {
+    width: 100%;
+    height: 120px;
+    border: none;
+    background-color: purple;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    display: flex;
+}
+
+
+/*This formats the main header of the page "Bridge Messenger". It is found in top bar of the page*/
+
+.top h1 {
+    font-size: 70px;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin-inline-start: 20px;
+}
+
+
+/*Format settings for the "Profile" button, found on the top bar of the page*/
+
+.top a button.profileBtn {
+    width: 200px;
+    height: 100px;
+    margin-right: 90px;
+    margin-left: 250px;
+    margin-top: 10px;
+    padding: 0px;
+    border: none;
+    border-radius: 12px;
+    font-size: 40px;
+    background-color: pink;
+    color: navy;
+}
+
+
+/*Format settings for the "Logout" button, found on the top bar of the page*/
+
+.top a button.logoutBtn {
+    width: 200px;
+    height: 100px;
+    margin-right: 30px;
+    margin-top: 10px;
+    padding: 0px;
+    border: none;
+    border-radius: 12px;
+    font-size: 40px;
+    background-color: rgb(218, 199, 240);
+    color: navy;
+}
+
+
+/*Format settings for the icons used in the profile and logout buttons*/
+
+.top a i {
+    padding: 2px 8px 0 0;
+}
+
+
+/*This is the settings for the div of the rest of the page (not including the top bar)*/
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*These are the settings for the welcome banner of the page*/
+
+.content h2 {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 60px;
+    border-bottom: 1px solid #e0e0e3;
+    color: navy;
+    text-align: center;
+}
+
+
+/*General button settings that apply to the buttons in the "content" div of the page*/
+
+.content>button {
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    width: 700px;
+    height: 120px;
+    font-size: 60px;
+    font-family: Georgia, serif;
+}
+
+
+/*Additional, specialized "Group Chat" button settings*/
+
+.content>button.button1 {
+    background-color: rgb(186, 34, 206);
+}
+
+
+/*Additional, specialized "Games" button settings*/
+
+.content>button.button2 {
+    background-color: palevioletred;
+}
+
+
+/*Additional, specialized "Notifications" button settings*/
+
+.content>button.button3 {
+    background-color: rgba(206, 34, 192, 0.603);
+}

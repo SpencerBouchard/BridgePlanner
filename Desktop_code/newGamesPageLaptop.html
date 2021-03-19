@@ -1,0 +1,153 @@
+<!-- This page was done by Celine Ayoub (A00423097) and Patrick Melanson-->
+
+<!DOCTYPE html>
+<html>
+<!--This is the link to the css for this HTML page-->
+<link href="newGamesPageLaptop.css" rel="stylesheet" type="text/css">
+<!--This is the link to the javascript for this HTML page--->
+<script src="newGamesPageLaptop.js"></script>
+<!--This button take the user back to the previous page they were on-->
+<button class="button backBtn" id="backBtn" onclick="window.location='gamesOptionsPageLaptop.html'">Back</button>
+
+<!--This is the title for this page-->
+<h1>Schedule a New Game</h1> <br>
+<form action="createNewGameLaptop.php" method="post">
+    <!--Date for the bridge game as a dropdown menu-->
+    <!--This is the label for the date dropdown menus-->
+    <span class="label date">Date:</span>
+    <!--This is the label for the month dropdown menu-->
+    <span class="label month">Month</span>
+    <!--The month dropdown menu-->
+    <div class="boxMonth">
+        <select id="month">
+    <option value="January">January</option>
+    <option value="February">Febuary</option>
+    <option value="March">March</option>
+    <option value="April">April </option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July </option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+    </select>
+    </div>
+
+    <!--This is the label for the day if the month dropdown menu-->
+    <span class="label day">Day</span>
+    <!--The day of the month dropdown menu-->
+    <div class="boxDay">
+        <select id="day" name="day">
+      <option value="1">1</option> 
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option> 
+      <option value="5">5</option>
+      <option value="6">6</option> 
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option> 
+      <option value="10">10</option>
+      <option value="11">11</option> 
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option> 
+      <option value="15">15</option>
+      <option value="16">16</option> 
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option> 
+      <option value="20">20</option>
+      <option value="21">21</option> 
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option> 
+      <option value="25">25</option>
+      <option value="26">26</option> 
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option> 
+      <option value="30">30</option>
+      <option value="31">31</option> 
+</select>
+    </div>
+
+    <!--This is the label for the year dropdown menu-->
+    <span class="label year">Year</span>
+    <!--The year dropdown menu-->
+    <div class="boxYear">
+        <select id="year" name="year">
+      <option value="2019">2019</option>
+      <option value="2020">2020</option> 
+      <option value="2021">2021</option>
+</select>
+    </div>
+    <br><br><br>
+
+    <!--Locations for bridge games as dropdown menu-->
+    <!--This is the label for the location dropdown menu-->
+    <span class="label location">Location:</span>
+    <!--The location dropdown menu-->
+    <div class="boxLocation">
+        <select id="location">
+      <option value="Cabanna">Cabanna </option>
+      <option value="Habour View Lodge">Habour View Lodge</option> 
+      <option value="Shirley Bernstein Hall">Shirley Bernstein Hall</option>
+</select>
+    </div>
+    <br><br><br>
+
+    <!--Time of the bridge games as dropdown menu-->
+    <!--This is the label for the game time dropdown menus-->
+    <span class="label time">Time:</span>
+    <!--The hour dropdown menu-->
+    <div class="boxHour">
+        <select id="hour" name="hour">
+   <option value="1">1 </option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+	  <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+	  <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+</select>
+    </div>
+
+    <!--The minute dropdown menu-->
+    <div class="boxMinute">
+        <select id="minute" name="minute">
+      <option value="00">00</option>
+      <option value="15">15</option>
+      <option value="30">30</option>
+      <option value="45">45</option>
+</select>
+    </div>
+
+    <!--The time of day dropdown menu-->
+    <div class="boxNoon">
+        <select id="noon" name="noon">
+    <option value="AM">AM</option> 
+    <option value="PM">PM</option> 
+</select> <br>
+    </div>
+    <br><br><br>
+
+    <!--Check box for bringing the card-->
+    <div class="bringCards" name="bringCards">
+        I Can Bringing a Deck of Cards <input type="checkbox" name="bringingCards" id="cardStatus">
+        <br><br>
+    </div>
+
+
+    <!--Button to confirm what they've selected, and validates it-->
+    <button class="button createGameBtn" id="createGameBtn" onclick="checkIfGood()" value="submit"> Create New Game</button> <br> <br>
+</form>
+
+</html>
